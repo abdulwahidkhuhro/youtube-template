@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: 'Roboto', sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <style>
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .menu-bar{
+            height: 60px;
+            background-color: tomato;
+        }
+        .search-bar{
+            display: block;
+        }
+        .video-preview{
+        }
+
+        /* inside .video-preview */
+        .video-thumbnail{
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        /* inside .video-preview */
+        .video-details{
+            display: grid ;
+            grid-template-columns: 50px 1fr;
+            
+        }
+
+        /* inside .video-details */
+        .channel-picture{
+            
+        }
+
+        .channel-picture img{
+            width: 40px;
+            border-radius: 50%;
+        }
+
+        /* inside .video-details */
+        .video-info{
+            
+        }
+        
+        /* inside .video-info */
+
+        .video-title{
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.4
+            ;
+            margin-bottom: 8px;
+        }
+        .video-author{
+            color: rgb(170, 170, 170);
+            font-size: 12px;
+            margin-bottom: 6px;
+        }
+        .video-status{
+            color: rgb(170, 170, 170);
+            font-size: 12px;
+        }
+
+
+        .videos-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 40px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="menu-bar">
+        <input type="text" class="search-bar">
+    </div>
+
+    <div class="videos-grid">
+
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-1.webp" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/marques-brownlee.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Talking Tech and AI with Google CEO Sunder Pichai!</p>
+                    <p class="video-author">Marques Brownlee</p>
+                    <p class="video-status">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-2.webp" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/learn-english-with-tv-series.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">5 Ways to Improve your English with Sofia Vergara</p>
+                    <p class="video-author">Learn English With TV Series</p>
+                    <p class="video-status">
+                        124K views &#183; 6 days ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-3.webp" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/tino-car-care.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Day in the Life of a Luxury Car Cleaner in london</p>
+                    <p class="video-author">Tino Car Care</p>
+                    <p class="video-status">
+                        3.9M views &#183; 4 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-4.webp" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/t-series.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Besharam Bewaffa Song: Divya K, Gautam G, Siddarth G</p>
+                    <p class="video-author">T-Series</p>
+                    <p class="video-status">
+                        235M views &#183; 1 year ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-5.jpg" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/super-simple-dev.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">Wordpress vs coding-why devs SOULD learn Wordpress</p>
+                    <p class="video-author">SuperSimpleDev</p>
+                    <p class="video-status">
+                        21K views &#183; 11 months ago
+                    </p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="video-preview">
+            <div>
+                <img src="./thumbnails/thumbnail-6.jpg" alt="" class="video-thumbnail">
+            </div>
+            <div class="video-details">
+                <div class="channel-picture">
+                    <img src="channel-icons/amigoscode.jpg" alt="">
+                </div>
+                <div class="video-info">
+                    <p class="video-title">A Day in the Life of a Software Engineer in london</p>
+                    <p class="video-author">Amigoscode</p>
+                    <p class="video-status">
+                        1.4M views &#183; 2 years ago
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    
+
+</body>
+</html>
